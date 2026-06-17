@@ -6,25 +6,31 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "package-update": "npx npm-check-updates -u && bun update --latest --save"
   },
   "keywords": [],
-  "author": "",
+  "author": "NanoRocky",
   "license": "ISC",
   "dependencies": {
-    "@astrojs/mdx": "^6.0.0",
-    "@astrojs/rss": "^4.0.7",
-    "@tailwindcss/postcss": "^4.3.0",
-    "@tailwindcss/vite": "^4.3.0",
-    "@waline/client": "^3.15.0",
-    "astro": "^6.4.0",
+    "@astrojs/mdx": "^6.0.3",
+    "@astrojs/rss": "^4.0.18",
+    "@noble/hashes": "^2.2.0",
+    "@tailwindcss/postcss": "^4.3.1",
+    "@tailwindcss/vite": "^4.3.1",
+    "@waline/client": "^3.15.2",
+    "astro": "^6.4.7",
+    "clsx": "^2.1.1",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
-    "tailwindcss": "^4.0.0"
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.1"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/typography": "^0.5.20",
+    "@types/node": "^25.9.3",
     "katex": "^0.17.0",
-    "typescript": "^5.5.0"
+    "typescript": "^6.0.3",
+    "npm-check-updates": "^22.2.3"
   }
 }

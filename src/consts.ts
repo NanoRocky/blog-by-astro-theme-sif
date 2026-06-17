@@ -1,9 +1,12 @@
-export const SITE_TITLE = 'Sify Blog';
-export const SITE_DESCRIPTION = '一个基于 Astro 的现代化博客主题';
-export const SITE_AUTHOR = 'santisify';
-export const SITE_URL = 'https://santisify.top';
-export const SITE_AVATAR = 'https://santisify.top/_vercel/image?url=_astro%2Favatar.BpCip-1B.png&w=1200&q=100';
-export const SITE_COVER = 'https://santisify.top/_vercel/image?url=_astro%2Fcf2227.wczNDBh1.webp&w=1920&q=100';
+export const SITE_HEAD = "一只酪灰的 Blog";
+export const SITE_TITLE = "NanoRocky's Blog";
+export const SITE_DESCRIPTION = '你好！欢迎来到酪灰的垃圾站~';
+export const SITE_AUTHOR = 'NanoRocky';
+export const SITE_URL = 'https://blog.nanorocky.top';
+export const SITE_AVATAR = 'https://file.nanorocky.top/home/images/icon/logo.png';
+export const SITE_COVER = 'https://filep.nanorocky.top/blogdata/images/cover.avif';
+
+export const WALINE_SERVER_URL = 'https://waline.nanorocky.top/';
 
 export const PAGE_SIZE = 10;
 
@@ -16,9 +19,8 @@ export const NAV_ITEMS = [
 ];
 
 export const SOCIAL_LINKS = [
-  { name: 'GitHub', href: 'https://github.com/santisify', icon: 'github' },
+  { name: 'GitHub', href: 'https://github.com/NanoRocky/', icon: 'github' },
   { name: 'RSS', href: '/rss.xml', icon: 'rss' },
 ];
 
 export const npmCDN = '';
-export const walineServer = '';

@@ -4,6 +4,24 @@
       "id_name": "cf-links",
       "desc": "Common links included in circle friends",
       "link_list": [
+        {
+          "name": "一位逼养的",
+          "intro": "pizeroLOL",
+          "link": "https://github.com/pizeroLOL/",
+          "avatar": "https://avatars.githubusercontent.com/u/71167373"
+        },
+        {
+          "name": "不认识",
+          "intro": "aoaokeai5",
+          "link": "https://github.com/aoaokeai5/",
+          "avatar": "https://avatars.githubusercontent.com/u/152758745"
+        },
+        {
+          "name": "柚稚老师！",
+          "intro": "zjw2017",
+          "link": "https://github.com/zjw2017/",
+          "avatar": "https://avatars.githubusercontent.com/u/30484319"
+        }
       ]
     },
     {
@@ -11,22 +29,10 @@
       "desc": "Other special links",
       "link_list": [
         {
-          "name": "开往",
-          "intro": "随机前往开往的成员博客",
-          "link": "https://www.travellings.cn/go.html",
+          "name": "项目原仓库",
+          "intro": "Santisify 的原项目仓库",
+          "link": "https://github.com/santisify/astro-theme-sify/",
           "avatar": "https://www.travellings.cn/assets/travelling.png"
-        },
-        {
-          "name": "BlogFinder",
-          "intro": "聚合优秀的个人博客，发掘优质的个人博客文章和内容",
-          "link": "https://bf.zzxworld.com/s",
-          "avatar": "https://bf.zzxworld.com/images/favicon.png"
-        },
-        {
-          "name": "博友圈",
-          "intro": "博客人的朋友圈",
-          "link": "https://www.boyouquan.com/",
-          "avatar": "https://www.boyouquan.com/assets/images/sites/logo/logo-small.png"
         }
       ]
     }

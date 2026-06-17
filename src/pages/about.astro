@@ -1,6 +1,6 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { SITE_AUTHOR } from '../consts';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_AUTHOR } from '@/consts';
 ---
 
 <BaseLayout title="关于">
@@ -8,21 +8,21 @@ import { SITE_AUTHOR } from '../consts';
     <article class="prose max-w-none">
       <h1>关于</h1>
       <p>
-        你好，我是 {SITE_AUTHOR}。这里是基于 Astro 构建的现代化博客。
+        你好，我是 酪灰 ({SITE_AUTHOR})。这里是基于 Astro 构建的一个酪灰的垃圾站 (x)。
       </p>
       <p>
-        这里会记录我的学习笔记、技术分享和生活随笔。希望你能在这里找到有用的内容。
+        这里可能会记录酪灰的某些学习笔记、技术分享与生活随笔。希望这里的内容能为你带来价值~
       </p>
+      <h2>捕捉酪灰</h2>
+      <ul>
+        <li>GitHub: <a href="https://github.com/NanoRocky/" target="_blank">NanoRocky</a></li>
+        <li>主页：<a href="https://nanorocky.top/" target="_blank">酪灰的主页</a></li>
+      </ul>
       <h2>关于本站</h2>
       <ul>
-        <li>框架：<a href="https://astro.build">Astro</a></li>
+        <li>框架：<a href="https://astro.build" target="_blank">Astro</a></li>
         <li>样式：Tailwind CSS</li>
-        <li>部署：静态站点</li>
-      </ul>
-      <h2>联系</h2>
-      <p>如有任何问题或建议，欢迎通过以下方式联系：</p>
-      <ul>
-        <li><a href="https://github.com/santisify">GitHub</a></li>
+        <li>开发：<a href="https://github.com/santisify/" target="_blank">Santisify</a></li>
       </ul>
     </article>
   </div>

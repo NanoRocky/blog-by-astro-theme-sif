@@ -15,6 +15,7 @@ const { class: className } = Astro.props;
 
 <script>
   import { init as walineInit } from '@waline/client';
+  import { WALINE_SERVER_URL } from '@/consts';
 
   const walineMounted = { current: false };
 
@@ -22,17 +23,27 @@ const { class: className } = Astro.props;
     const el = document.getElementById('waline');
     if (!el) return;
     walineMounted.current = true;
-    walineInit({
+    const instance = walineInit({
       el: '#waline',
-      serverURL: '',  //waline服务链接
+      serverURL: WALINE_SERVER_URL,
       lang: 'zh-CN',
       dark: 'auto',
       meta: ['nick', 'mail', 'link'],
       requiredMeta: ['nick'],
       pageSize: 10,
       imageUploader: false,
-      noRss: true
+      noRss: true,
     });
+
+    if (instance) {
+      (instance as any).on('login', () => {
+        window.dispatchEvent(new Event('waline-user-changed'));
+      });
+      (instance as any).on('logout', () => {
+        window.dispatchEvent(new Event('waline-user-changed'));
+        setTimeout(() => window.location.reload(), 100);
+      });
+    }
   }
 
   boot();

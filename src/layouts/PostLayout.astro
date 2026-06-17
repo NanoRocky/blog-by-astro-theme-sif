@@ -1,7 +1,7 @@
 ---
-import BaseLayout from './BaseLayout.astro';
-import TableOfContents from '../components/TableOfContents.astro';
-import Comment from '../components/waline/Comment.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import TableOfContents from '@/components/TableOfContents.astro';
+import Comment from '@/components/waline/Comment.astro';
 interface MarkdownHeading {
   depth: number;
   slug: string;
@@ -18,7 +18,7 @@ interface Props {
 const {title, description, headings, cover} = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} ogType="article" ogImage={cover}>
+<BaseLayout title={title} description={description} ogType="article" image={cover}>
   {
     cover && (
       <div class="relative w-full h-64 sm:h-80 lg:h-96 overflow-hidden -mt-16 mb-8">

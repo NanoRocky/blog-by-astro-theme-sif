@@ -1,12 +1,12 @@
 ---
-import  {npmCDN, walineServer }from '../../consts.ts'
+import {npmCDN, WALINE_SERVER_URL } from '@/consts.ts'
 ---
 
 <script
   is:inline
   type='module'
   data-astro-rerun
-  define:vars={{ npmCDN: npmCDN, walineServer: walineServer }}
+  define:vars={{ npmCDN: npmCDN, walineServer: WALINE_SERVER_URL }}
 >
   async function loadPageview() {
     try {
