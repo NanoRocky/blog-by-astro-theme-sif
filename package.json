@@ -11,7 +11,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "package-update": "npm-check-updates -u && pnpm update --latest --save-exact"
+    "package-update": "npx npm-check-updates -u && pnpm update --latest --save-exact"
   },
   "keywords": [],
   "author": "NanoRocky",
