@@ -3,34 +3,39 @@
   "version": "1.0.0",
   "description": "A blog theme built with Astro and Tailwind CSS",
   "type": "module",
+  "engines": {
+    "node": ">=24.22.1 <25 || >=26.12.1",
+    "pnpm": ">=12.14.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "package-update": "npx npm-check-updates -u && bun update --latest --save"
+    "package-update": "npm-check-updates -u && pnpm update --latest --save-exact"
   },
   "keywords": [],
   "author": "NanoRocky",
   "license": "ISC",
   "dependencies": {
-    "@astrojs/mdx": "^6.0.3",
-    "@astrojs/rss": "^4.0.18",
-    "@noble/hashes": "^2.2.0",
-    "@tailwindcss/postcss": "^4.3.1",
-    "@tailwindcss/vite": "^4.3.1",
-    "@waline/client": "^3.15.2",
-    "astro": "^6.4.7",
+    "@astrojs/mdx": "^8.1.1",
+    "@astrojs/rss": "^4.0.19",
+    "@noble/hashes": "^2.4.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "@waline/client": "^3.16.1",
+    "astro": "^7.4.2",
     "clsx": "^2.1.1",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
-    "tailwind-merge": "^3.6.0",
-    "tailwindcss": "^4.3.1"
+    "tailwind-merge": "^3.7.0",
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "@astrojs/markdown-remark": "^7.3.4",
     "@tailwindcss/typography": "^0.5.20",
-    "@types/node": "^25.9.3",
-    "katex": "^0.17.0",
-    "typescript": "^6.0.3",
-    "npm-check-updates": "^22.2.3"
+    "@types/node": "^26.6.5",
+    "katex": "^0.19.1",
+    "npm-check-updates": "^23.1.1",
+    "typescript": "^7.0.2"
   }
 }
